@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adhésion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <body>
+    
+  <main class="page">
+    <header class="header">
+      <div class="nav">
+        <div class="menuburger">
+          <a href=""><img src="../assets/Menu-burger.svg" alt="Menu-burger" /></a>
+        </div>
+        <div class="logo">
+          <a href="#"><img src="../assets/logo-paris-musee.svg"
+              alt="" /></a>
+        </div>
+        <div class="billet">
+          <a href=""><img src="../assets/billeterie.svg" alt="" /></a>
+        </div>
+      </div>
+    </header>
+  <style>
+
+
+   :root{
+  --text:#111;
+  --muted:#6b7280;
+  --brand:#6C5CE7; /* violet bouton */
+  --brand-dark:#5a49e0;
+  --bg:#fff;
+  --card:#f7f7fb;
+  --border:#e5e7eb;
+}
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+    .page{max-width:392px;margin:0 auto;padding:16px 18px 40px;}
+
+    /* header */
+    body {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 62px;
+}
+
+.nav {
+    width: 94%;
+    padding: 0 4px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 33px;
+    height: 42px;
+    padding-top: 10px;
+}
+
+.menuburger {
+    height: 24px;
+    width: 24px;
+    padding-top: 20px;
+}
+
+
+.billet {
+    padding-top: 20px;
+}
+
+
+
+    .title{font-size:28px;font-weight:700;letter-spacing:0.2px;text-align:center;margin:8px 0 18px}
+
+    .h2{font-size:22px;font-weight:700;margin:14px 0}
+
+    .ticketRow{display:grid;grid-template-columns:120px 1fr;gap:14px;align-items:start;margin-bottom:18px}
+    .ticketImg{width:120px;height:160px;border-radius:6px;background:var(--card) center/cover no-repeat;border:1px solid var(--border)}
+    .ticketBody{font-size:13px;line-height:1.45}
+    .muted{color:var(--muted)}
+
+    .prices{font-size:13px;margin:10px 0 8px}
+
+    .btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;border:none;font-weight:600;font-size:13px;padding:11px 16px;border-radius:8px;box-shadow:0 6px 14px rgba(108,92,231,.25);transition:transform .04s ease, background .2s}
+    .btn:active{transform:translateY(1px)}
+    .btn:hover{background:var(--brand-dark)}
+
+    .sep{height:1px;background:var(--border);margin:18px 0}
+
+    details{border:1px solid var(--border);border-radius:10px;overflow:hidden}
+    summary{cursor:pointer;list-style:none;padding:14px 16px;font-weight:700;display:flex;align-items:center;justify-content:space-between}
+    summary::-webkit-details-marker{display:none}
+    .chev{transition:transform .2s ease}
+    details[open] .chev{transform:rotate(180deg)}
+
+    .panel{padding:8px 12px 14px;border-top:1px solid var(--border)}
+    .note{font-size:11px;color:var(--muted);text-align:center;margin:8px 0 10px}
+
+    table{width:100%;border-collapse:collapse;font-size:13px}
+    thead th{font-weight:600;text-align:left;padding:8px 6px;border-bottom:1px solid var(--border)}
+    tbody td{padding:10px 6px;border-bottom:1px solid var(--border)}
+    .qty{display:inline-flex;align-items:center;gap:8px}
+    .qty input{width:48px;text-align:center;padding:6px 8px;font:inherit;border:1px solid var(--border);border-radius:8px;background:#fff}
+    .right{text-align:right}
+
+    .totalRow{display:flex;justify-content:space-between;align-items:center;margin:12px 0 12px;padding:4px 2px;font-weight:700}
+    .stickyAdd{width:100%;}
+
+    .mb8{margin-bottom:8px}
+    .mb12{margin-bottom:12px}
+
+    .img-solo{background-image:url("../assets/cards-solo.jpg");}
+    .img-duo{background-image:url("../assets/cards-duo.jpg");}
+    .img-jeune{background-image:url("../assets/cards-jeune.jpg");}
+
+    @media (min-width:420px){.page{padding:18px 22px}}
+  </style>
+</head>
+<body>
+  <main class="page" id="app">
+  <h1 class="title" id="cartes">Adhésion</h1>
+
+    <h2 class="h2">Carte Solo</h2>
+    <div class="ticketRow">
+      <div class="ticketImg img-solo" aria-label="Carte d'adhésion numérique SOLO"></div>
+      <div class="ticketBody">
+        <p>La carte SOLO Paris Musées vous offre un accès illimité et prioritaire aux expositions temporaires des musées de la Ville de Paris (sauf Catacombes et Crypte archéologique).</p>
+        <p>La carte est valable un an à compter de la date choisie.</p>
+        <p>Elle est strictement nominative et doit être présentée au contrôle d’accès.</p>
+        <p class="prices muted">Tarifs : Plein 50€ / Réabonnement ou Partenaire 45€.</p>
+        <button class="btn" data-add="solo">AJOUTER AU PANIER</button>
+      </div>
+    </div>
+
+    <h2 class="h2">Carte Duo</h2>
+    <div class="ticketRow">
+      <div class="ticketImg img-duo" aria-label="Carte d'adhésion numérique DUO"></div>
+      <div class="ticketBody">
+        <p>La carte DUO Paris Musées offre à son titulaire ainsi qu’à un invité de son choix un accès illimité et prioritaire aux expositions temporaires des musées de la Ville de Paris (sauf Catacombes et Crypte archéologique).</p>
+        <p>La carte est valable un an à compter de la date choisie.</p>
+        <p>Elle est strictement nominative et doit être présentée au contrôle d’accès.</p>
+        <p class="prices muted">Tarifs : Plein 75€ / Réabonnement ou Partenaire 65€.</p>
+        <button class="btn" data-add="duo">AJOUTER AU PANIER</button>
+      </div>
+    </div>
+
+    <h2 class="h2">Carte Jeune</h2>
+    <div class="ticketRow">
+      <div class="ticketImg img-jeune" aria-label="Carte d'adhésion numérique JEUNE"></div>
+      <div class="ticketBody">
+        <p>La carte JEUNE Paris Musées est réservée aux 18-26 ans inclus. Elle offre à son titulaire un accès illimité et prioritaire aux expositions temporaires des musées de la Ville de Paris.</p>
+        <p>La carte est valable un an à compter de la date choisie.</p>
+        <p>Elle est strictement nominative et doit être présentée au contrôle d’accès.</p>
+        <p class="prices muted">Tarifs : Plein 20€ / Réabonnement ou Partenaire 15€.</p>
+        <button class="btn" data-add="jeune">AJOUTER AU PANIER</button>
+      </div>
+    </div>
+
+    <details open>
+      <summary>
+        CHOIX DES BILLETS
+        <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </summary>
+      <div class="panel">
+        <p class="note">Veuillez indiquer le nombre de pass que vous souhaitez pour chaque tarif</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Tarif</th>
+              <th class="right">Quantité</th>
+              <th class="right">Prix unitaire</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Carte Jeune</td>
+              <td class="right">
+                <div class="qty">
+                  <input type="number" id="q-jeune" min="0" value="1">
+                </div>
+              </td>
+              <td class="right" data-price="jeune">20.00€</td>
+            </tr>
+            <tr>
+              <td>Carte Duo</td>
+              <td class="right">
+                <div class="qty">
+                  <input type="number" id="q-duo" min="0" value="0">
+                </div>
+              </td>
+              <td class="right" data-price="duo">75.00€</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="totalRow">
+          <span>Total</span>
+          <span id="total">20.00 €</span>
+        </div>
+        <button class="btn stickyAdd" id="addToCart">AJOUTER AU PANIER</button>
+      </div>
+    </details>
+  </main>
+
+  <script>
+    const euro = (v)=> v.toFixed(2).replace('.', ',') + ' €';
+    const priceJeune = 20.00;
+    const priceDuo = 75.00;
+
+    const qJeune = document.getElementById('q-jeune');
+    const qDuo = document.getElementById('q-duo');
+    const totalEl = document.getElementById('total');
+
+    function updateTotal(){
+      const t = (Number(qJeune.value||0)*priceJeune) + (Number(qDuo.value||0)*priceDuo);
+      totalEl.textContent = euro(t).replace(',', '.').replace('.', ',');
+    }
+
+    qJeune.addEventListener('input', updateTotal);
+    qDuo.addEventListener('input', updateTotal);
+    updateTotal();
+
+    document.querySelectorAll('[data-add]')?.forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        const type = btn.getAttribute('data-add');
+        if(type==='jeune') qJeune.value = Number(qJeune.value||0)+1;
+        if(type==='duo') qDuo.value = Number(qDuo.value||0)+1;
+        if(type==='solo') alert('La Carte Solo n\'est pas listée dans le tableau ci-dessous (démo). Ajoutez-la selon vos besoins.');
+        updateTotal();
+      })
+    })
+  </script>
+</body>
+</html>
