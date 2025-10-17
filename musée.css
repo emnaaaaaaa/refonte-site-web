@@ -1,0 +1,614 @@
+body {
+  margin: 0 auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+
+.header {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   height: 62px;
+}
+
+.nav {
+  width: 94%;
+  padding: 0 4px;
+
+  display: flex;
+  justify-content: space-between ;
+}
+.nav .menuburger img{
+  height: 24px;
+  width: 24;
+}
+
+.logo{
+    width: 33px;
+    height: 42px;
+    padding-top: 10px;
+}
+
+
+
+.menuburger {
+    height: 24px;
+    width: 24px;
+    padding-top: 20px;
+}
+
+
+.nav .billet img {
+  height: 24px;
+  width: 24;
+
+}
+
+
+
+
+/* Menu burger général */
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;          
+  flex-direction: column;
+  padding-top: 74px;      
+  z-index: 1000;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+}
+
+/* En-tête du menu burger */
+.burger-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 95px;
+}
+
+.close-menu,
+.search-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+.close-menu{
+  margin-bottom: 10px;
+}
+/* bouton et texte caché */
+.search-box {
+  display: flex;
+  margin-bottom: 37px;
+  padding: 0 20px;
+}
+
+  .search-box input {
+  width: 70%;
+  height: 33px;
+  border: 1px solid rgb(117, 139, 224);
+  border-radius: 64px;
+  background-color: transparent;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; 
+}
+.search-box input::placeholder {
+  color: black;
+  font-weight: 500;
+}
+/* Liste des liens */
+.burger-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  width: 100%;
+  align-items: center; /* centre horizontalement */
+}
+.burger-links img {
+  height: 24px;
+  width: 24px;
+}
+.burger-links li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.burger-links a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;              
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  margin-left: 30px;
+  padding: 10px 120px; 
+  width: 100%;
+  box-sizing: border-box;
+}
+.link-icon {
+  width: 40px;       
+  height: 40px;
+  margin-right: 8px; 
+}
+.burger-links hr {
+  width: 35%;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-top: 8px;
+  margin-left: 120px;
+  opacity: 0.8;
+}
+.search-icon img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+/* FIN menu burger*/
+
+
+
+
+.billet{
+    padding-top: 20px;
+}
+
+
+.img-bleu img {
+    width: 100%;
+    height: 22vh ;
+}
+.title {
+  margin-top: 24px;
+}
+
+
+
+#rectangle{
+    width: 6px;
+    height: 7px;
+    background-color: rgb(117, 139, 224);
+}
+.actualité h1 {
+   margin-top: 2px;
+   margin-bottom: 21px;
+   font-size: 24px;
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+}
+
+.box-child {
+  width: 100%;
+  background-color: #f4f4f4;
+  border-radius: 16px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.box-child img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.box-child h2 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+}
+
+.box-child p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.gg{
+    height: 24px;
+    width: 24px;
+}
+
+.description{
+  text-align: center;
+}
+.description h1{
+  margin-top: 13px;
+  font-size: 20px;
+}
+.description p {
+  margin-top: 13px;
+}
+
+.ButtonContainer {
+    background-color: transparent;
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.Button {
+    width: 70%;
+    height: 33px;
+    border: 1px solid;
+    border-radius: 64px;
+    text-align: center;
+    border-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center
+;}
+
+.text {
+    width: 100%;
+    height: 33px;
+    border: 1px solid ;
+    border-radius: 64px;
+    text-align: center;
+    border-color:rgb(117, 139, 224);
+    justify-content: center;
+    align-items: center;
+    background-color:transparent;
+    transition: all 0.3s ease;
+}
+.text p {
+  font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+}
+
+
+.text-1 {
+    width: 100%;
+    height: 33px;
+    border: 1px solid ;
+    border-radius: 64px;
+    text-align: center;
+    border-color:rgb(117, 139, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:transparent;
+    transition: all 0.3s ease;
+}
+.text-2 {
+    width: 100%;
+    height: 33px;
+    border: 1px solid ;
+    border-radius: 64px;
+    text-align: center;
+    border-color:rgb(117, 139, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:transparent;
+    transition: all 0.3s ease;
+}
+.text-1 p {
+  font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+}
+.text-1:hover {
+  background-color: rgb(117, 139, 224);
+}
+.text-1:hover p {
+  color: white;
+}
+.text-2 p {
+  font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+}
+.text-2:hover {
+  background-color: rgb(117, 139, 224);
+}
+.text-2:hover p {
+  color: white;
+}
+
+
+
+
+.title2 {
+  margin-top: 50px;
+}
+
+#rectangle{
+    width: 108px;
+    height: 7px;
+    background-color: rgb(117, 139, 224);
+}
+#rectanglee{
+    width: 170px;
+    height: 7px;
+    background-color: rgb(117, 139, 224);
+}
+#rectangleee{
+  width: 175px;
+  height: 7px;
+  background-color: rgb(117, 139, 224);
+}
+.collection h1 {
+   font-family: Georgia, 'Times New Roman', Times, serif; 
+   font-size: 24px;
+   font-weight: bold;
+}
+.boxe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.boxe-child {
+  width: 350px;
+  background-color: #f4f4f4;
+  border-radius: 16px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.boxe-child img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.boxe-child h2 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+}
+
+.boxe-child p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.box .Button {
+    width: 30%;
+    height: 33px;
+    border: 1px solid;
+    border-radius: 64px;
+    text-align: center;
+    border-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+.box-child {
+  position: relative; /* nécessaire pour positionner le badge */
+}
+
+.badge {
+  position: absolute;
+  top: 260px;
+  left: 25px;
+  background-color: white;
+  color: green;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 16px;
+  border-radius: 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.badge1{
+  position: absolute;
+  top: 260px;
+  left: 25px;
+  background-color: white;
+  color: red;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 16px;
+  border-radius: 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+
+
+.text {
+    width: 100%;
+    height: 33px;
+    border: 1px solid;
+    border-radius: 64px;
+    text-align: center;
+    border-color:rgb(117, 139, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+
+.carousel-item {
+  position: relative;
+  flex: 0 0 auto; 
+  width: 249px;
+  height: 214px; 
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Enlève les marges du corps de la page */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+.suite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 50px;
+}
+.suite h2{
+  font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.suite p {
+  text-align: center;
+  padding: 0 50px;
+}
+.description h1{
+  font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.box-child h2{
+  font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer général */
+footer {
+  background-color: rgb(255, 255, 255); /* fond noir */
+  color: rgb(0, 0, 0);            /* texte blanc */
+  text-align: center;      /* tout est centré */
+  padding: 30px 0;      /* espace intérieur */
+}
+
+/* Logo du footer */
+.footer-logo img {
+  width: 117px;
+  height: 47px;
+}
+
+/* Liens du footer */
+.footer-links {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* pour les centrer horizontalement */
+  gap: 10px;
+}
+
+/* Style des liens */
+.footer-links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none; /* pas de soulignement */
+  margin: 0 8px;         /* espace entre les liens */
+}
+
+/* Quand la souris passe sur un lien */
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Trait noir entre les liens */
+.footer-links span {
+  display: block; /* le met à côté du lien */
+  background-color: rgb(0, 0, 0); /* blanc pour être visible sur fond noir */
+  width: 30%; /* largeur du trait */
+  height: 1px; /* hauteur du trait */
+  margin: 6px 0;
+}
+
+/* Partie du bas du footer (texte + logos) */
+.footer-bottom {
+  margin-top: 22px;
+}
+
+/* Le texte du bas */
+.footer-bottom p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.social-icons {
+  display: flex;           /* active le mode flex */
+  justify-content: center; /* centre horizontalement */
+  flex-wrap: nowrap;       /* empêche le retour à la ligne */
+  gap: 50px;               /* espace entre chaque logo */
+}
+
+
+/* Icônes des réseaux sociaux */
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  margin: 0 -5px;
+}
+.prefooter img{
+   width: 100%;
+   height: 22vh ;
+}
+.footer-bottom p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
