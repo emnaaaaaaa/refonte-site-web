@@ -19,8 +19,7 @@
           <a href=""><img src="../assets/Menu-burger.svg" alt="Menu-burger" /></a>
         </div>
         <div class="logo">
-          <a href="#"><img src="../assets/logo-paris-musee.svg"
-              alt="" /></a>
+          <a href="#"><img src="../assets/logo-paris-musee.svg" alt="" /></a>
         </div>
         <div class="billet">
           <a href=""><img src="../assets/billeterie.svg" alt="" /></a>
@@ -44,7 +43,7 @@
 
         <div class="ButtonContainer">
           <div class="Button">
-          <a href="index2.html#cartes" class="btn-discover">Découvrir nos cartes</a>
+            <a href="index2.html#cartes" class="btn-discover">Découvrir nos cartes</a>
           </div>
         </div>
 
@@ -120,32 +119,32 @@
 
 
 
-   <section class="section">
-  <h2 class="h2">Billet Catacombes de Paris</h2>
-  <div class="grid2">
-    <article class="ticket">
-      <div class="ticketImg">
-        <img src="../assets/catacombes1.svg" alt="Billet Catacombes 2025" />
-      </div>
-      <div class="ticketBody">
-        <h3 class="ticketTitle">Billet officiel // Catacombes 2025</h3>
-        <p class="muted">à partir de 12,00 €<br />Du 14 au 19 oct 2025</p>
-        <a class="btn" href="#">Acheter</a>
-      </div>
-    </article>
+    <section class="section">
+      <h2 class="h2">Billet Catacombes de Paris</h2>
+      <div class="grid2">
+        <article class="ticket">
+          <div class="ticketImg">
+            <img src="../assets/catacombes1.svg" alt="Billet Catacombes 2025" />
+          </div>
+          <div class="ticketBody">
+            <h3 class="ticketTitle">Billet officiel // Catacombes 2025</h3>
+            <p class="muted">à partir de 12,00 €<br />Du 14 au 19 oct 2025</p>
+            <a class="btn" href="#">Acheter</a>
+          </div>
+        </article>
 
-    <article class="ticket">
-      <div class="ticketImg">
-        <img src="../assets/catacombes2.svg" alt="Billet Catacombes 2025" />
+        <article class="ticket">
+          <div class="ticketImg">
+            <img src="../assets/catacombes2.svg" alt="Billet Catacombes 2025" />
+          </div>
+          <div class="ticketBody">
+            <h3 class="ticketTitle">Billet officiel // Catacombes 2025</h3>
+            <p class="muted">à partir de 3,00 €</p>
+            <a class="btn" href="#">Acheter</a>
+          </div>
+        </article>
       </div>
-      <div class="ticketBody">
-        <h3 class="ticketTitle">Billet officiel // Catacombes 2025</h3>
-        <p class="muted">à partir de 3,00 €</p>
-        <a class="btn" href="#">Acheter</a>
-      </div>
-    </article>
-  </div>
-</section>
+    </section>
 
 
     <section class="section expo">
@@ -168,7 +167,7 @@
           <p class="expoDates">Du 14 oct. — 31 déc 2025</p>
         </article>
 
-        
+
       </div>
 
       <div class="v-dots" id="expoDots" aria-hidden="true">
@@ -180,6 +179,34 @@
         <button class="vbtn" id="nextV" aria-label="Suivant">↓</button>
       </div>
     </section>
+    <footer>
+      <div class="prefooter">
+        <img src="../assets/logo-paris-musee.svg" alt="">
+      </div>
+      <div class="footer-logo">
+        <img src="../assets/logo-paris-musee.svg" alt="Logo">
+      </div>
+
+      <div class="footer-links">
+        <a href="#">NOUS CONTACTER</a><span></span>
+        <a href="#">RECRUTEMENT</a><span></span>
+        <a href="#">MARCHÉS</a><span></span>
+        <a href="#">PRESSE</a><span></span>
+        <a href="#">PRIVATISATION D'ESPACE</a><span></span>
+      </div>
+      <div class="footer-bottom">
+        <p>Suivez nous sur les réseaux sociaux</p>
+        <div class="social-icons">
+          <img src="../assets/instagram.jpeg" alt="Instagram">
+          <img src="../assets/facebook.jpeg" alt="Facebook">
+          <img src="../assets/tiktok.jpeg" alt="Tiktok">
+          <img src="../assets/reddit.jpeg" alt="Reddit">
+          <img src="../assets/linkedin.jpeg" alt="linkedIn">
+          <img src="../assets/youtube.jpeg" alt="youtube">
+        </div>
+      </div>
+    </footer>
+
 
 
 
@@ -192,7 +219,7 @@
       const dots = Array.from(document.getElementById('expoDots').children);
       const prev = document.getElementById('prevV');
       const next = document.getElementById('nextV');
-      const GAP = 16; 
+      const GAP = 16;
       let index = 0;
 
       function go(i) {

@@ -1,23 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-html, body {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  color: #111;
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #111;
 }
 
-h1, h2, h3, h4, h5 {
-  font-weight: 600;  /* un peu plus épais pour les titres */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 600;
+    /* un peu plus épais pour les titres */
 }
 
-p, a, li, span {
-  font-weight: 400;  /* texte standard */
+p,
+a,
+li,
+span {
+    font-weight: 400;
+    /* texte standard */
 }
 
-button, .btn, .btnLink {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  letter-spacing: 0.3px;
+button,
+.btn,
+.btnLink {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.3px;
 }
 
 
@@ -25,11 +37,12 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
 }
-.page{
-  max-width: 430px;       
-  margin: 0 auto;
-  padding: 0 ;         
-  box-sizing: content-box;
+
+.page {
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: content-box;
 }
 
 header {
@@ -95,24 +108,24 @@ header {
 
 
 .btn-discover {
-  margin-top: 20px;
-  display: inline-block;
-  text-decoration: none;      
-  background: transparent;       
-  padding: 10px 24px;
-  border-radius: 50px;  
-  border: 1px solid;
-  border-color: rgb(130,130,255);
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center
-;}
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    background: transparent;
+    padding: 10px 24px;
+    border-radius: 50px;
+    border: 1px solid;
+    border-color: rgb(130, 130, 255);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .btn-discover:hover {
-  background: rgb(130,130,255);
+    background: rgb(130, 130, 255);
 }
 
 
@@ -138,16 +151,18 @@ header {
     height: 52px;
     background-color: #111;
 }
+
 .Abonnement .container {
-  width: 100%;
-  max-width: 380px;        
-  margin: 0 auto;           
-  display: flex;
-  justify-content: center;
-  gap: 10px;                
-  padding: 0 6px; 
-  margin-bottom: 28px; 
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 6px;
+    margin-bottom: 28px;
 }
+
 .section .Abonnement {
     height: 1000px;
     display: flex;
@@ -157,288 +172,363 @@ header {
 
 .gauche,
 .droite {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;                
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-  display: flex;
-  flex-direction: column;
-  gap: 4px;                 
-  padding: 8px;
-  width: 100%;              
-  box-sizing: border-box;   
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 @media (max-width: 400px) {
-  .Abonnement .container {
-    gap: 6px;               
-    padding: 0 4px;
-  }
+    .Abonnement .container {
+        gap: 6px;
+        padding: 0 4px;
+    }
 
-  .card {
-    padding: 6px;
-  }
+    .card {
+        padding: 6px;
+    }
 }
+
 .card p,
 .card h3 {
-  margin: 0;
-  line-height: 1.2;      
+    margin: 0;
+    line-height: 1.2;
 }
 
 .card .kicker {
-  font-size: 13px;
-  letter-spacing: 0.3px;
-  color: #333;
-  margin-bottom: 2px;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    color: #333;
+    margin-bottom: 2px;
 }
 
 .card .title {
-  font-size: 15px;
-  font-weight: 700;
-  margin-bottom: 2px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 2px;
 }
 
 .card .sub {
-  font-size: 13px;
-  color: #444;
-  margin-bottom: 4px;
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 4px;
 }
 
 .card .price {
-  font-size: 13px;
-  font-weight: 500;
-  color: #222;
-  margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 6px;
 }
 
 .btnLink {
-  background: #f7f5ff;
-  border: 1px solid #cfc7ff;
-  color: #4e3fe6;
-  text-decoration: none;
-  border-radius: 999px;
-  padding: 6px 10px;     
-  font-size: 13px;
-  font-weight: 600;
+    background: #f7f5ff;
+    border: 1px solid #cfc7ff;
+    color: #4e3fe6;
+    text-decoration: none;
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 
 
-.grid2{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px
 }
 
-.ticket{
-    border:1px solid var(--line);
-    border-radius:12px;
-    overflow:hidden;
-    background:#fff;
-    display:flex;
-    flex-direction:column
-}
-
-.ticketImg{
-    height:120px;
-    background:#f1efef
-}
-
-.ticketImg.dark{
-    background:#302c2c
-}
-
-.ticketBody{
-    padding:10px
-}
-
-.ticketTitle{
-    font-size:14px;
-    margin:0 0 6px
-}
-
-.muted{
-    color:var(--muted);
-    font-size:12px;
-    margin:0 0 8px
-}
-
-.btn{
-    display:inline-block;
-    background:#111;
-    color:#fff;
-    text-decoration:none;
-    padding:8px 12px;
-    border-radius:8px;
-    font-weight:600
-}
-
-.v-carousel{
-  display:flex;
-  flex-direction:column;          
-  overflow-y:auto;                
-  scroll-snap-type:y mandatory;   
-  gap:16px;                       
-  max-height:520px;               
-  padding-right:6px;              
-  margin:10px 0;
-}
-
-.v-slide{
-  scroll-snap-align:start;
-  border:1px solid #e6e6ea;
-  border-radius:12px;
-  background:#fff;
-  padding:10px;
-}
-
-
-.posterWrap{
-  width:100%;
-  aspect-ratio:3/4;               
-  overflow:hidden;
-  border-radius:8px;
-}
-.posterWrap img{
-  width:100%;
-  height:100%;
-  object-fit:cover;                
-  display:block;
-}
-
-.expoTitle{
-  margin:8px 0 2px;
-  font-size:16px;
-  font-weight:700;
-}
-.expoDates{
-  margin:0 0 4px;
-  font-size:13px;
-  color:#6b6b6b;
-}
-
-
-.v-dots{ 
-    display:flex; 
-    gap:6px; 
-    justify-content:center; 
-    margin:6px 0 0; 
-}
-
-.v-dots span{
-     width:6px; 
-     height:6px; 
-     border-radius:999px; 
-     background:#c5c5cf; 
-     display:inline-block; 
-}
-
-.v-dots .active{ 
-    background:#6f6f79;
-}
-
-.v-controls{ 
-    display:flex; 
-    justify-content:center; 
-    gap:10px; 
-    margin:8px 0 0; 
-}
-
-.vbtn{ 
-    width:36px; 
-    height:36px; 
-    border:1px solid #e0e0e6; 
-    border-radius:999px; 
-    background:#fff; 
-    font-size:16px; 
-    line-height:1; 
-}
-
-.carousel {
-  display: flex;
-  flex-direction: column;     
-  overflow-y: auto;          
-  scroll-snap-type: y mandatory; 
-  gap: 12px;                  
-  max-height: 600px;          
-  padding-right: 6px;         
-}
-
-.slide {
-  scroll-snap-align: start;
-  border: 1px solid #e6e6ea;
-  border-radius: 12px;
-  overflow: hidden;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 8px;
-}
-
-.poster {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-bottom: 1px solid #eee;
-}
-
-.poster.dark{
-    background:#e7e7e7
-}
-
-.expo{
-    font-size:14px;
-    margin:8px 10px 2px
-}
-
-.dots{
-    display:flex;
-    gap:6px;
-    justify-content:center;
-    align-items:center;
-    margin:8px 0 2px
-}
-
-.dots span{
-    width:6px;
-    height:6px;
-    border-radius:999px;
-    background:#cfcfd6;
-    display:inline-block
-}
-
-.dots .active{
-    background:#8c8c96
+.ticket {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    flex-direction: column
 }
 
 .ticketImg {
-  width: 100%;
-  aspect-ratio: 4/3;      
-  overflow: hidden;
-  border-radius: 8px;
+    height: 120px;
+    background: #f1efef
 }
+
+.ticketImg.dark {
+    background: #302c2c
+}
+
+.ticketBody {
+    padding: 10px
+}
+
+.ticketTitle {
+    font-size: 14px;
+    margin: 0 0 6px
+}
+
+.muted {
+    color: var(--muted);
+    font-size: 12px;
+    margin: 0 0 8px
+}
+
+.btn {
+    display: inline-block;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 600
+}
+
+.v-carousel {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    gap: 16px;
+    max-height: 520px;
+    padding-right: 6px;
+    margin: 10px 0;
+}
+
+.v-slide {
+    scroll-snap-align: start;
+    border: 1px solid #e6e6ea;
+    border-radius: 12px;
+    background: #fff;
+    padding: 10px;
+}
+
+
+.posterWrap {
+    width: 100%;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.posterWrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.expoTitle {
+    margin: 8px 0 2px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.expoDates {
+    margin: 0 0 4px;
+    font-size: 13px;
+    color: #6b6b6b;
+}
+
+
+.v-dots {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin: 6px 0 0;
+}
+
+.v-dots span {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: #c5c5cf;
+    display: inline-block;
+}
+
+.v-dots .active {
+    background: #6f6f79;
+}
+
+.v-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 8px 0 0;
+}
+
+.vbtn {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #e0e0e6;
+    border-radius: 999px;
+    background: #fff;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    gap: 12px;
+    max-height: 600px;
+    padding-right: 6px;
+}
+
+.slide {
+    scroll-snap-align: start;
+    border: 1px solid #e6e6ea;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.poster {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+.poster.dark {
+    background: #e7e7e7
+}
+
+.expo {
+    font-size: 14px;
+    margin: 8px 10px 2px
+}
+
+.dots {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0 2px
+}
+
+.dots span {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: #cfcfd6;
+    display: inline-block
+}
+
+.dots .active {
+    background: #8c8c96
+}
+
+.ticketImg {
+    width: 100%;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
 .ticketImg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;      
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Footer général */
+footer {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* Logo du footer */
+.footer-logo img {
+    width: 117px;
+    height: 47px;
+}
+
+/* Liens du footer */
+.footer-links {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Style des liens */
+.footer-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+/* Quand la souris passe sur un lien */
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Trait noir entre les liens */
+.footer-links span {
+    display: block;
+    background-color: rgb(0, 0, 0);
+    width: 30%;
+    height: 1px;
+    margin: 6px 0;
+}
+
+/* Partie du bas du footer*/
+.footer-bottom {
+    margin-top: 22px;
+}
+
+/* Le texte du bas */
+.footer-bottom p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 50px;
 }
 
 
+/* Icônes des réseaux sociaux */
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 -5px;
+}
 
+.prefooter img {
+    width: 100%;
+    height: 22vh;
+}
 
-
-
-
-
-
-
+.footer-bottom p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
