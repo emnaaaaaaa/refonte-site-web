@@ -1,0 +1,178 @@
+/* Menu burger général */
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  /* caché par défaut */
+  flex-direction: column;
+  padding-top: 74px;
+  /* distance depuis le haut */
+  z-index: 1000;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* En-tête du menu burger */
+.burger-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 95px;
+}
+
+.close-menu,
+.search-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-menu {
+  margin-bottom: 10px;
+}
+
+/* Champ texte caché */
+.search-box {
+  display: flex;
+  margin-bottom: 37px;
+  padding: 0 20px;
+}
+
+.search-box input {
+  width: 70%;
+  height: 33px;
+  border: 1px solid rgb(117, 139, 224);
+  border-radius: 64px;
+  background-color: transparent;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  /* centre le bouton */
+  outline: none;
+  /* enlève la bordure bleue au clic */
+}
+
+.search-box input::placeholder {
+  color: black;
+  font-weight: 500;
+}
+
+/* Liste des liens */
+.burger-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  width: 100%;
+  align-items: center;
+  /* centre horizontalement */
+}
+
+.burger-links img {
+  height: 24px;
+  width: 24px;
+}
+
+.burger-links li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* centrer  le lien */
+}
+
+.burger-links a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  margin-left: 30px;
+  padding: 10px 120px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.link-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  /* espace entre l'icône et le texte */
+}
+
+.burger-links hr {
+  width: 35%;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-top: 8px;
+  margin-left: 120px;
+  opacity: 0.8;
+}
+
+.search-icon img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.ButtonContainer {
+  background-color: transparent;
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.Button {
+  width: 70%;
+  height: 33px;
+  border: 1px solid;
+  border-radius: 64px;
+  text-align: center;
+  border-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-1,
+.text-2 {
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 64px;
+  text-align: center;
+  border-color: rgb(117, 139, 224);
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.text-1 p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.text-2 p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
